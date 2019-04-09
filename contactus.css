@@ -24,3 +24,31 @@ button{
   padding: 14px 28px;
   border-radius: 12px;
 }
+input{
+width:60%;
+height:25px;
+margin:auto;
+}
+textarea{
+width:80%;
+height:150px;
+}
+.flexcontents{
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+justify-content: space-around;
+width:500px;
+}
+.flex1,.flex2,.flex3,.flex4{
+margin-bottom:20px;
+}
+.flexcontents strong{
+margin-right:0px;
+}
+.flexcontents input{
+width:400px;
+margin:0px;
+float:right;
+border-radius:5px;
+}
