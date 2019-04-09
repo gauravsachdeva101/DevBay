@@ -3,9 +3,12 @@ let upperNavObj = document.getElementsByClassName('upper-nav')[0];//selecting th
 let upperNav = upperNavObj.getElementsByTagName('li');
 let upperNavArr = Array.from(upperNav);
 let myAccount = upperNavArr[8];
+let socialLinksObj = document.getElementsByClassName('socials')[0];
+let socialObj = socialLinksObj.getElementsByTagName('i');
+let socialArr = Array.from(socialObj)
+console.log(socialArr);
 console.log(myAccount);
 myAccount.addEventListener('click',logIN);
-
 function logIN(e)
 {
 window.location.href='account.html';
