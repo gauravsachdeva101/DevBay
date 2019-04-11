@@ -11,7 +11,7 @@ padding:0px;
 background:white;
 font-size:16px;
 }
-
+ 
 
 
 /* STARTING OF NAVBAR CODE! */
@@ -19,6 +19,7 @@ font-size:16px;
 /* ------------------------------------------------------------------------------------------- */
 .main-nav{
 position:fixed;
+z-index:4;
 width:100%;
 display:flex;
 flex-flow:row wrap;
@@ -60,24 +61,8 @@ margin:10px var(--marginns) 10px var(--marginns);
 .upper-nav>li:nth-child(1)
 {
 margin-left:0px;
-margin-right:120px;
+margin-right:80px;
 }
-/* .upper-nav>li:nth-child(2)
-{
-margin:10px 10px 10px 220px;
-}
-.upper-nav>li:nth-child(4)
-{
-margin:10px 0px 10px 0px;
-} 
-.upper-nav>li:nth-child(6)
-{
-margin:10px 0px 10px 10px;
-}
-.upper-nav>li:nth-child(7)
-{
-margin:10px 10px 10px 20px;
-} */
 .upper-nav>li:nth-child(8)
 {
 margin-right:0px;
@@ -121,9 +106,9 @@ display:block;
 .upper-nav>li:nth-child(2):hover
 {
 color: #00ccff;
-border-bottom:5px solid #0cf;
+/* border-bottom:5px solid #0cf; */
 }
-.upper-nav>li:nth-child(4):hover
+.upper-nav>li:nth-child(3):hover
 {
 color: #00ccff;
 border-bottom:5px solid #0cf;
@@ -144,17 +129,17 @@ border-bottom:5px solid #0cf;
 color: #00ccff;
 border-bottom:5px solid #0cf;
 }
-.upper-nav>li:nth-child(3)>a:hover ~.lower-nav>li>a
+.upper-nav>li:nth-child(4)>a:hover ~.lower-nav>li>a
 {
 font-size:1rem;
 }
-.upper-nav>li:nth-child(3)>a:hover ~.lower-nav
+.upper-nav>li:nth-child(4)>a:hover ~.lower-nav
 {
 border-top:3px solid #00ccff;
 transform:scale(1);
 height:100px;
 }
-.upper-nav>li:nth-child(3)>a:hover ~.lower-nav>li
+.upper-nav>li:nth-child(4)>a:hover ~.lower-nav>li
 {
 transform:scale(1);
 padding:10px 2px 10px 2px;
@@ -163,7 +148,10 @@ padding:10px 2px 10px 2px;
 {
 border-top:3px solid #00ccff;
 transform:scale(1);
-height:100px;
+height:94px;
+}
+.upper-nav>li:nth-child(2)>.searchBar:hover{
+opacity:1.0;
 }
 .lower-nav:hover >li
 {
@@ -178,6 +166,18 @@ font-size:1rem;
 {
 border-bottom:1px solid grey;
 }
+.searchBar{
+display:flex;
+flex-flow:row nowrap;
+align-items:center;
+padding:0px;
+margin:0px;
+width:300px;
+opacity:0.6;
+transition:all 150ms;
+height:initial;
+border:1px solid grey;
+}
 /* ---------------------------
 ---------------------------
 END OF NAVBAR CODE */
@@ -187,12 +187,63 @@ padding-top:100px;
 /* border:1px solid red; */
 margin:0px;
 width:100%;
+transition:all 300ms;
 background-image:url("https://htoindia.com/wp-content/uploads/2017/05/19-amazing-temple-of-south-india.jpg");
-height: 400px;
+height: 450px;
 background-size:cover;
 background-position:center;
 /* background-attachment: fixed; */
 background-repeat:no-repeat;
+display:flex;
+flex-flow: row nowrap;
+align-items:center;
+justify-content: center;
+}
+.jumbodisp ~div{
+width:50px;
+height:50px;
+background:black;
+opacity:0.4;
+border-radius:100px;
+}
+.sliderMain{
+display:flex;
+flex-flow:row nowrap;
+align-items:center;
+}
+.leftSlid{
+float:left;
+margin-right:auto;
+position:absolute;
+margin-left:5px;
+left:4px;
+}
+.rightSlid{
+position:absolute;
+right:4px;
+float:right;
+margin-left:auto;
+margin-right:5px;
+}
+.rightSlid,.leftSlid{
+padding:0px;
+display:flex;
+flex-flow:row nowrap;
+align-items:center;
+justify-content:center;
+}
+.rightSlid i{
+margin:0px;
+margin-left:4px;
+font-size:2rem;
+color:white;
+}
+
+.leftSlid i{
+margin:0px;
+margin-right:4px;
+font-size:2rem;
+color:white;
 }
 .poojaganga{
 padding:0px;
