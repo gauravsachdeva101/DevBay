@@ -17,7 +17,14 @@ html,body{
   margin: 0px 100px 20px 100px;
 }
 .contentshop{
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+
+  width:initial;
   margin: 20px 110px 20px 110px;
+  padding:5px;
+  border:2px solid rgb(191, 191, 191);
 }
 .relbooks{
 padding:0px;
@@ -32,7 +39,7 @@ justify-content:center;
 }
 .sliderRB{
 margin:0px;
-padding:0px;
+padding:10px;
 display:flex;
 flex-flow:row nowrap;
 justify-content: center;
@@ -54,12 +61,12 @@ margin-right:40px;
     margin-left:0px;
     margin-right:10px;
 }
-.pooja{
+.pooja,.twohundo,.fivehundo,.tenhundo{
 display:flex;
 flex-flow:row wrap;
 width:240px;
 }
-.twohundo{
+/* .twohundo{
 display:flex;
 flex-flow:row wrap;
 width:240px;
@@ -73,7 +80,7 @@ width:240px;
 display:flex;
 flex-flow:row wrap;
 width:240px;
-}
+} */
 .label{
 width:inherit;
 height:0px;
@@ -126,64 +133,168 @@ button{
   border-radius: 12px;
 }
 .product{
-  /* display:flex;
-  flex-flow:row wrap;
-  width:350px; */
+  display:flex;
+  flex-flow:column wrap;
+  width:initial;
+  align-items:center;
+  justify-content:center;
   text-align: center;
+}
+.product button{
+margin-top:auto;
 }
 .upperinshop{
   text-align: center;
   font-size: 20px;
-  margin: 50px;
+  margin:0px;
+  margin-bottom:35px;
+  width:100%;
+  position:sticky;
+  height:40px;
+  padding:5px;
   display: flex;
   flex-flow: row wrap;
+  align-items:center;
+  justify-content:center;
   /* align-items:  */
-  border: 2px solid grey;
+  border-bottom: 2px solid rgb(191, 191, 191);
+}
+.upperinshop div{
+margin-left:60px;
+margin-right:60px;
+}
+.upperinshop div:first-child{
+margin-left:0px;
+}
+.upperinshop div:last-child{
+margin-right:0px;
 }
 .shopnav{
-  border: 1px solid red;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  font-size:1em;
+  padding: 0px;
+  height:initial;
+}
+.shopnav i{
+margin:0px;
+padding:5px;
+}
+.shopper{
+  margin: 0px;
+  font-size:1em;
+  padding: 0px;
+  height:initial;
+  border:1px solid red;
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+  justify-content: center;
+  position:sticky;
+}
+.shopper p{
+padding:3px;
+border:1px solid red;
+margin:0px;
 }
 .shopnavlast{
   float:right;
-  border: 1px solid red;
+  margin:0px;
+  padding:0px;
+  /* margin:10px;
+  margin-right:10px;
+  margin-left:auto; */
+}
+.shopnavlast p{
+padding:3px;
+margin:0px;
 }
 .shopnavdrop{
+  margin:0px;
+  position:sticky;
+  padding:3px;
   display: flex;
   flex-flow: row wrap;
-}
-.sorting{
-  display: none;
-position: absolute;
-background-color: #f1f1f1;
-}
-.shopnav{
-  font-size: 23px;
+  align-items:center;
+  justify-content:center;
 }
 .sortingdropdown{
-  padding: 10px;
+  display:flex;
+
+  flex-flow:row wrap;
   font-size: 18px;
-  border: 1px solid grey;
-  margin-bottom: 0px;
-  margin-top: 10px;
-  height: 40px;
   /* top:40px */
 }
 .shopnavarrow{
-  border: 1px solid grey;
-  padding: 10px;
+  /* padding: 10px;
   height: 40px;
-  margin-top: 10px;
+  margin: 10px; */
 }
+.sorting{
+  position:absolute;
+  display:none; 
+  /* top:31%;
+  left:30%; */
+  width:inherit;
+  top:35px;left:0px;
+  margin: 0px;
+  transition:all 250ms;
+  color:black;
+  background-color: #f1f1f1;
+  padding:0px;
+}
+.sorting ul{
+padding:0px;
+margin:0px;
+}
+.sorting li{
+border-bottom:1px solid grey;
+list-style-type: none;
+padding:0px;
+transition:all 250ms;
+margin:2px;
+}
+.shopnavdrop,.shopnav,.shopper,.shopnavlast{
+transition:all 250ms;
+opacity:0.7;
+}
+.shopnavlast a{
+text-decoration:none;
+transition:all 250ms;
+color:black;
+opacity:0.7;
+}
+.sorting li:hover {background-color: #0066ff;color:#fff}
+.shopnavdrop:hover .sorting {display: block;position:absolute;}
 
-.sorting a{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  margin-top: 0px;
+.shopnavdrop:hover {opacity:1.0;
+color:#0cf;
 }
-.sorting a:hover {background-color: #0066ff;}
-.shopnavdrop:hover .sorting {display: block;}
-.shopnavdrop:hover .sortingdropdown {background-color: #cccccc;}
+.shopnav:hover {opacity:1.0;
+color:#0cf;
+}
+.shopper:hover {opacity:1.0;
+color:#0cf;
+}
+.shopnavlast:hover,.shopnavlast a:hover{opacity:1.0;
+color:#0cf;
+}
+.slider{
+display:block;
+position:absolute;
+transition:width 250ms;
+width:0%;
+}
+.shopper:hover .slider{
+display:block;
+width:100%;
+top:25px;
+}
+.slider::-webkit-slider-thumb:hover{
+height:0px;
+background:none;
+cursor:grab;
+}
+@keyframes names{
+0%{}
+100%{}
+}
