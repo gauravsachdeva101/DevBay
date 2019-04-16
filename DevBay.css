@@ -8,7 +8,7 @@ height:100%;
 width:100%;
 margin:0px;
 padding:0px;
-background:white;
+background:rgb(204, 204, 204);
 font-size:16px;
 }
  
@@ -178,6 +178,12 @@ transition:all 150ms;
 height:initial;
 border:1px solid grey;
 }
+#splLogo{
+cursor:auto;
+}
+#splLogo:hover{
+cursor:pointer;
+}
 /* ---------------------------
 ---------------------------
 END OF NAVBAR CODE */
@@ -210,6 +216,7 @@ border-radius:100px;
 display:flex;
 flex-flow:row nowrap;
 align-items:center;
+margin-bottom:20px;
 }
 .leftSlid{
 float:left;
@@ -246,22 +253,29 @@ font-size:2rem;
 color:white;
 }
 .poojaganga{
+border-radius:2px;
 padding:0px;
 height:350px;
-margin:0px;
-border-top:5px solid #0cf;
-/* border-bottom:5px solid #0cf; */
+margin:15px auto;
+width:98%;
+background:white;
+border-top:4px solid #0cf;
+/*border-bottom:5px solid #0cf; */
+border-bottom:4px solid #0cf;
 display:flex;
 flex-flow:column nowrap;
 align-items: center;
 justify-content:center;
 }
 .relbooks{
+border-radius:2px;
+background:white;
+width:98%;
 padding:0px;
 height:500px;
-margin:0px;
-border-top:5px solid #0cf;
-border-bottom:5px solid #0cf;
+margin:15px auto;
+border-top:4px solid #0cf;
+border-bottom:4px solid #0cf;
 display:flex;
 flex-flow:column nowrap;
 align-items: center;
