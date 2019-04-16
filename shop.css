@@ -2,6 +2,7 @@ html,body{
   width: 100%;
   height: 100%;
   margin: 0px;
+  background:rgb(204, 204, 204);
   font-family: 'Francois One', sans-serif;
 }
 .headingshop{
@@ -20,11 +21,12 @@ html,body{
   display:flex;
   flex-flow:column wrap;
   align-items:center;
-
+  background:white;
+  border-radius:2px;
   width:initial;
   margin: 20px 110px 20px 110px;
   padding:5px;
-  border:2px solid rgb(191, 191, 191);
+  /* border:2px solid rgb(191, 191, 191); */
 }
 .relbooks{
 padding:0px;
@@ -150,7 +152,7 @@ margin-top:auto;
   margin-bottom:35px;
   width:100%;
   position:sticky;
-  height:40px;
+  height:60px;
   padding:5px;
   display: flex;
   flex-flow: row wrap;
@@ -179,30 +181,60 @@ margin-right:0px;
 margin:0px;
 padding:5px;
 }
+.shopperVal{
+margin:0px;
+padding:0px;
+display:flex;
+flex-flow:column wrap;
+align-items:flex-start;
+}
+.shopperVal
+{
+margin:0px;
+align-self:flex-start;
+}
+.shopperMain
+{
+display:flex;
+width:initial;
+flex-flow:column wrap;
+margin:0px;
+padding:0px;
+align-items:flex-start;
+}
+.shopperMain div{margin:0px;padding:0px;}
+.shopperMain p{margin:0px;padding:0px;}
 .shopper{
-  margin: 0px;
-  font-size:1em;
-  padding: 0px;
-  height:initial;
-  border:1px solid red;
-  display:flex;
-  flex-flow:column wrap;
-  align-items:center;
-  justify-content: center;
-  position:sticky;
+margin: 0px;
+font-size:1em;
+padding: 0px;
+height:initial;
+display:flex;
+flex-flow:row wrap;
+align-items:center;
+justify-content: center;
+position:sticky;
 }
 .shopper p{
-padding:3px;
-border:1px solid red;
+align-self:center;
 margin:0px;
+margin-right:10px;
 }
-.shopnavlast{
-  float:right;
-  margin:0px;
-  padding:0px;
-  /* margin:10px;
-  margin-right:10px;
-  margin-left:auto; */
+.shopper form
+{
+width:100px;
+height:15px;
+margin:0px;
+padding:0px;
+}
+.shopnavlast
+{
+float:right;
+margin:0px;
+padding:0px;
+/* margin:10px;
+margin-right:10px;
+margin-left:auto; */
 }
 .shopnavlast p{
 padding:3px;
@@ -278,22 +310,23 @@ color:#0cf;
 .shopnavlast:hover,.shopnavlast a:hover{opacity:1.0;
 color:#0cf;
 }
-.slider{
+#slider{
+cursor:grab;
 display:block;
 position:absolute;
-transition:width 250ms;
-width:0%;
-}
-.shopper:hover .slider{
-display:block;
-width:100%;
-top:25px;
-}
-.slider::-webkit-slider-thumb:hover{
-height:0px;
-background:none;
+width:100px;
 cursor:grab;
+transition:width 250ms;
 }
+#slider::-webkit-slider-thumb{
+display:block;
+cursor:inherit;
+background:green;   
+}
+#slider::-webkit-slider-runnable-track{
+z-index:2;
+}
+
 @keyframes names{
 0%{}
 100%{}
