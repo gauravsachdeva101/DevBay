@@ -46,7 +46,10 @@ display:flex;
 flex-flow:row nowrap;
 justify-content: center;
 }
-
+.sliderRB *
+{
+cursor:pointer;
+}
 .sliderRB>div{
 flex-shrink:1;
 margin:0px;

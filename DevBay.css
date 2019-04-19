@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Playball');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 html,body{
 height:100%;
@@ -283,9 +284,28 @@ justify-content:center;
 }
 .headerPG,.headerRB{
 margin:0px;
+padding:0px;
+cursor:pointer;
+/* font-family: 'Noto Sans', sans-serif; */
 margin-bottom:50px;
-font-family: 'Playball', cursive;
-
+transition:all 250ms;
+position:relative;
+/* font-family: 'Playball', cursive; */
+font-family: 'Francois One', sans-serif;
+letter-spacing: 1px;
+}
+.headerPG:hover
+{
+color:rgb(201, 68, 64);
+}
+.headerRB:hover
+{
+color:rgb(201,68,64);
+}
+.headerPG:hover .tooltip
+{
+opacity:1;
+color:black;
 }
 .sliderPG,.sliderRB{
 margin:0px;
@@ -299,22 +319,24 @@ margin:0px;
 margin-left:10px;
 margin-right:10px;
 flex-shrink:1;
+cursor:pointer;
 }
 .sliderRB>div{
+cursor:pointer;
 flex-shrink:1;
 margin:0px;
 margin-left:40px;
 margin-right:40px;
 }
 .sliderPG>div:first-child,.sliderRB>div:first-child{
-    margin:0px;
-    margin-left:0px;
-    margin-right:10px;
+margin:0px;
+margin-left:0px;
+margin-right:10px;
 }
 .sliderPG>div:last-child,.sliderRB>div:last-child{
-    margin:0px;
-    margin-left:0px;
-    margin-right:10px;
+margin:0px;
+margin-left:0px;
+margin-right:10px;
 }
 .pooja{
 display:flex;
@@ -420,6 +442,30 @@ flex-flow:column wrap;
 align-items: center;
 justify-content:flex-start;
 }
+/* .littleD
+{
+display:flex;
+flex-flow:row nowrap;
+align-items:flex-start;
+overflow:hidden;
+justify-content: space-between;
+}
+.littleP
+{
+transition:all 250ms;
+display:inline;
+padding:0px;
+font-size:0.7rem;
+opacity:0;
+margin:0px;
+}
+.overFlow
+{
+overflow:hidden;
+position:relative;
+margin:0px 0px 10px 10px;
+} */
+.others{align-items:flex-start;}
 .socials i,.others i{
 margin-bottom:12px;
 }
@@ -463,6 +509,15 @@ transition:all 150ms;
 }
 .others i:first-child:hover,.others i:nth-child(2):hover,.others i:last-child:hover{
 transform:rotate(360deg);
+}
+.others i:first-child:hover ~.overFlow>.littleP,.others i:nth-child(2):hover ~.overFlow>.littleP,.others i:last-child:hover ~.overFlow>.littleP
+{
+transform:rotate(360deg);
+opacity:1;
+}
+.littleP:hover
+{
+opacity:1;
 }
 .learn>ul>li:first-child:hover,.company>ul>li:first-child:hover,.product>ul>li:first-child:hover,.product>ul>li:nth-child(2):hover,.company>ul>li:last-child:hover,.product>ul>li:last-child:hover
 {
