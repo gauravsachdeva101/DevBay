@@ -527,8 +527,12 @@ FOOTER ENDS HERE */
     {
     width:0px;
     }
-@media only screen and (max-width:400px) 
+@media only screen and (max-width:440px) 
 {
+.sliderMain
+{
+display:none;
+}
 .upper-nav-resp>li:nth-child(2):hover,.upper-nav-resp>li:nth-child(3):hover,.upper-nav-resp>li:nth-child(4):hover,.upper-nav-resp>li:nth-child(5):hover,.upper-nav-resp>li:nth-child(6):hover
     {
     color: #00ccff;
@@ -536,9 +540,14 @@ FOOTER ENDS HERE */
     }
     .main-nav
     {
+    top:0px;
     display:flex;
     flex-flow:column wrap;
     align-items:center;
+    }
+    body
+    {
+    padding-top:60px;
     }
     .upper-nav>li:not(:first-child)
     {
