@@ -155,7 +155,7 @@ margin-top:auto;
   margin-bottom:35px;
   width:100%;
   position:sticky;
-  height:60px;
+  height:initial;
   padding:5px;
   display: flex;
   flex-flow: row wrap;
@@ -278,10 +278,12 @@ margin:0px;
   padding:0px;
 }
 .sorting ul{
+  z-index:5;
 padding:0px;
 margin:0px;
 }
 .sorting li{
+  z-index:5;
 border-bottom:1px solid grey;
 list-style-type: none;
 padding:0px;
@@ -330,7 +332,24 @@ background:green;
 z-index:2;
 }
 
-@keyframes names{
-0%{}
-100%{}
+@media only screen and (max-width:440px) 
+{
+    
+    .sliderPG,.sliderRB
+    {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items:center;
+    }
+    .sliderPG>div,.sliderRB>div
+    {
+    margin-bottom:30px;
+    }
+    .upperinshop>div
+    {
+    margin:auto;
+    }
 }

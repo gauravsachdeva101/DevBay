@@ -59,7 +59,7 @@ else
     addnPar.style.borderBottom='2px solid #0cf'; 
     }
 }
-
+ 
 function xoops()
 {
 addnPar.style.borderTop='2px solid white';

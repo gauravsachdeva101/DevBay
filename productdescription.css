@@ -24,7 +24,7 @@ display:flex;
 flex-flow:column wrap;
 justify-content: space-around;
 }
-.products{
+.products{ 
 display: flex;
 flex-flow: row wrap;
 align-items:center;
@@ -324,4 +324,41 @@ justify-content: center;
 margin:0px;
 width:700px;
 border-left:1px solid #d9d9d9;
+}
+@media only screen and (max-width:440px) 
+{
+    .sliderPG,.sliderRB
+    {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items:center;
+    }
+    .sliderPG>div,.sliderRB>div
+    {
+    margin-bottom:30px;
+    }
+    .upperinshop>div
+    {
+    margin:auto;
+    }
+    .productimage
+    {
+    position:static;
+    }
+    .products
+    {
+    display:flex;
+    flex-flow:column wrap;
+    }
+    .restProd
+    {
+        border:1px solid #d9d9d9;  
+    }
+    .relProducts
+    {
+    margin:0px auto;
+    }
 }
