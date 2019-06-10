@@ -1,3 +1,4 @@
+// FINAL
 console.log('hi');
 
 
@@ -8,7 +9,7 @@ var u="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&
 var descVar = document.getElementsByClassName('m')[0];
 var addnVar = document.getElementsByClassName('n')[0];
 var descPar = descVar.getElementsByTagName('p')[0];
-var addnPar = addnVar.getElementsByTagName('p')[0]; 
+var addnPar = addnVar.getElementsByTagName('p')[0];
 var desc = document.getElementsByClassName('BD')[0];
 var addn = document.getElementsByClassName('AI')[0];
 
@@ -31,19 +32,19 @@ function ops()
 if(jhanda1)
     {
     descPar.style.borderTop='2px solid #d9d9d9';
-    descPar.style.borderBottom='2px solid #d9d9d9';  
+    descPar.style.borderBottom='2px solid #d9d9d9';
     }
-else   
+else
     {
-    descPar.style.borderTop='2px solid #0cf';
-    descPar.style.borderBottom='2px solid #0cf'; 
+    descPar.style.borderTop='2px solid rgba(255,119,0,0.9)';
+    descPar.style.borderBottom='2px solid rgba(255,119,0,0.9)';
     }
 }
 
 function xops()
 {
 descPar.style.borderTop='2px solid white';
-descPar.style.borderBottom='2px solid white';  
+descPar.style.borderBottom='2px solid white';
 }
 
 function oops()
@@ -51,19 +52,19 @@ function oops()
 if(jhanda2)
     {
     addnPar.style.borderTop='2px solid #d9d9d9';
-    addnPar.style.borderBottom='2px solid #d9d9d9';  
+    addnPar.style.borderBottom='2px solid #d9d9d9';
     }
-else   
+else
     {
-    addnPar.style.borderTop='2px solid #0cf';
-    addnPar.style.borderBottom='2px solid #0cf'; 
+    addnPar.style.borderTop='2px solid rgba(255,119,0,0.9)';
+    addnPar.style.borderBottom='2px solid rgba(255,119,0,0.9)';
     }
 }
- 
+
 function xoops()
 {
 addnPar.style.borderTop='2px solid white';
-addnPar.style.borderBottom='2px solid white';  
+addnPar.style.borderBottom='2px solid white';
 }
 
 function xors(e)
@@ -72,7 +73,7 @@ desc.style.display='block';
 jhanda1=1;
 jhanda2=0;
 addn.style.display='none';
-descVar.style.color='#0cf';
+descVar.style.color='rgba(255,119,0,0.9)';
 addnVar.style.color='black';
 }
 
@@ -82,7 +83,7 @@ jhanda1=0;
 jhanda2=1;
 desc.style.display='none';
 addn.style.display='block';
-addnVar.style.color='#0cf';
+addnVar.style.color='rgba(255,119,0,0.9)';
 descVar.style.color='black';
 }
 
@@ -90,4 +91,3 @@ descVar.style.color='black';
 var sizes = document.getElementsByClassName('product');
 var sizesArr = Array.from(sizes);
 sizesArr.forEach(nums=>nums.addEventListener('click',()=>{window.location.href='productdescription.html'}));
-

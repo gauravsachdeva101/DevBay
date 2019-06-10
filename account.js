@@ -1,4 +1,5 @@
-let mainDisp = document.getElementsByClassName('maindivaccount')[0];
+// FINAL
+console.log('hi');
 let register = document.getElementById('register');
 let login = document.getElementById('login');
 let circle = document.getElementsByClassName('circle')[0];

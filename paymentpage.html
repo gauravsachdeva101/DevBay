@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="paymentpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  </head>
+  <body>
+    <div class="headingofcheckout">
+      <h1 id='heading'>Checkout</h1>
+    </div>
+    <div class="contentofcheckout">
+      <div class="billingdetails">
+        <h2>Billing Details</h2>
+        <p>Full Name </p>
+        <input type="text" name="name" placeholder="Enter your full name here">
+        <p>Mobile Number </p>
+        <input type="text" name="number" placeholder="Enter your mobile number here">
+        <p>Street address</p>
+        <input type="text" name="address1" placeholder="Enter your house number/flat number/floor/building"><br><br>
+
+        <input type="text" name="address2" placeholder="Enter your Colony/Street/Locality">
+        <p>Landmark</p>
+        <input type="text" name="landmark" placeholder="Eg. Behind PVR Cinema etc.">
+        <p>City/Town</p>
+        <input type="text" name="city" placeholder="Enter your city here">
+        <div class='selection'>
+          <div>
+        <p>State</p>
+        <select name="stateslist">
+         <option value="">Select State</option>
+         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+         <option value="Andhra Pradesh">Andhra Pradesh</option>
+         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+         <option value="Assam">Assam</option>
+         <option value="Bihar">Bihar</option>
+         <option value="Chandigarh">Chandigarh</option>
+         <option value="Chhattisgarh">Chhattisgarh</option>
+         <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+         <option value="Daman and Diu">Daman and Diu</option>
+         <option value="Delhi">Delhi</option>
+         <option value="Goa">Goa</option>
+         <option value="Gujarat">Gujarat</option>
+         <option value="Haryana">Haryana</option>
+         <option value="Himachal Pradesh">Himachal Pradesh</option>
+         <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+         <option value="Jharkhand">Jharkhand</option>
+         <option value="Karnataka">Karnataka</option>
+         <option value="Kerala">Kerala</option>
+         <option value="Lakshadweep">Lakshadweep</option>
+         <option value="Madhya Pradesh">Madhya Pradesh</option>
+         <option value="Maharashtra">Maharashtra</option>
+         <option value="Manipur">Manipur</option>
+         <option value="Meghalaya">Meghalaya</option>
+         <option value="Mizoram">Mizoram</option>
+         <option value="Nagaland">Nagaland</option>
+         <option value="Orissa">Orissa</option>
+         <option value="Pondicherry">Pondicherry</option>
+         <option value="Punjab">Punjab</option>
+         <option value="Rajasthan">Rajasthan</option>
+         <option value="Sikkim">Sikkim</option>
+         <option value="Tamil Nadu">Tamil Nadu</option>
+         <option value="Tripura">Tripura</option>
+         <option value="Uttaranchal">Uttaranchal</option>
+         <option value="Uttar Pradesh">Uttar Pradesh</option>
+         <option value="West Bengal">West Bengal</option>
+         </select></div>
+         <div style='padding-left:25px;'>
+         <p>Country/Region</p> <select class="" name="country">
+           <option value="">India</option>
+         </select>
+         </div></div>
+         <p>Postal Code/ZIP</p>
+         <input type="text" name="pincode" placeholder="Enter your postal code here">
+         <p>Email address </p>
+         <input type="email" name="email" placeholder="Enter your email here ">
+         <div class='check'><p>Different shipping address?<input type="checkbox" name="shippingaddress" id="myCheck" onclick="myFunction()">
+          </p></div>
+          <div class="" style='display:none' id='text'>
+
+
+           <p>Full Name </p>
+           <input type="text" name="name" placeholder="Enter your full name here">
+           <p>Mobile Number </p>
+           <input type="text" name="number" placeholder="Enter your mobile number here">
+           <p>Street Address</p>
+           <input type="text" name="address1" placeholder="Enter your house number/flat number/floor/building">
+           <input type="text" name="address2" placeholder="Enter your Colony/Street/Locality">
+           <p>Landmark</p>
+           <input type="text" name="landmark" placeholder="Eg. Behind PVR Cinema etc.">
+           <p>City/Town</p>
+           <input type="text" name="city" placeholder="Enter your city here">
+           <p>State</p>
+           <select name="stateslist">
+            <option value="">Select State</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Orissa">Orissa</option>
+            <option value="Pondicherry">Pondicherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttaranchal">Uttaranchal</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+            <p>Postal Code/ZIP</p>
+            <input type="text" name="pincode" placeholder="Enter your postal code here">
+    </div>
+
+         <p>Order notes(optional)</p>
+         <textarea name="notes" rows="9" cols="80" placeholder="Notes about order eg special instructions for delivery" ></textarea>
+        </div>
+      <div class="paymentdeatils">
+        <h2>Your Order</h2>
+        <div class="productprice">
+          <div class="heads">
+            <div><p>Product</p></div>
+            <div id='t'><p>Total</p></div>
+          </div>
+          <div class='total'>
+            <div class="left">
+              <div>Product 1</div>
+              <div>Product 2</div>
+              <div>Subtotal</div>
+              <div>Shipping</div>
+              <div>Promo code</div>
+              <div>Total</div>
+            </div>
+           <div class="right">
+             <div>Product1 Price</div>
+             <div>Product2 Price</div>
+             <div>Subtotal charges</div>
+             <div>Shipping Charges</div>
+             <div><input id='code'type="text" name="promocode" value="" placeholder="Enter promocode here"><button type="button" name="button">APPLY</button></div>
+            <div>Total charges</div>
+           </div>
+           </div>
+        </div>
+        <div class="paymentmethod">
+          <p>Payment Method: </p>
+          <input type="radio" name="pay" value="">Credit Card/Debit Card/Net Banking
+          <p>Pay securely by Credit or Debit card or Internet Banking through Razorpay.</p>
+          <input type="radio" name="pay" value="">Pay on Delivery
+        </div>
+        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="privacypolicy.html">privacy policy</a>.</p>
+        <p> <input type="checkbox" name="agree" value=""> I have read and agree to the website terms and conditions</p>
+        <button type="button" name="button">Place order</button>
+      </div>
+    </div>
+      <script src="paymentpage.js"></script>
+  </body>
+</html>

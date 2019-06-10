@@ -1,0 +1,88 @@
+.contentofcheckout{
+  margin:40px 110px 110px 110px;
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: center;
+  align-items: center; */
+}
+.headingofcheckout{
+  margin: 0px;
+  padding: 3px;
+  background: rgba(255,119,0,0.9);
+}
+#heading{
+  margin: 1px 40px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  width: 100%;
+}
+.billingdetails input{
+width: 70%;
+height: 30px;
+margin: auto;
+}
+.billingdetails p{
+margin-bottom: 5px;
+}
+select{
+  height: 30px;
+  width:auto;
+}
+#code{
+width: 50%;
+height: 30px;
+margin: auto;
+}
+.check input{
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+
+}
+.productprice{
+  border: 2px solid black;
+}
+.heads{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.total{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-around;
+}
+.right div{
+margin: 15px;
+padding: 0px;
+}
+.left div{
+margin: 15px;
+padding: 0px;
+}
+
+#t{
+  float: right;
+  align-items: flex-end;
+  text-align: right;
+}
+.selection{
+  display: flex;
+  flex-flow: row nowrap;
+}
+button{
+  display:inline-block;
+  border-radius: 0px;
+  background: rgba(255,119,0,0.9);
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border: 0px;
+  margin-top:auto;
+}
