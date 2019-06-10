@@ -3,15 +3,15 @@ width:100%;
 height: 100%;
 padding:0px;
 margin: 0px;
-font-family: 'Francois One', sans-serif;    
+font-family: 'Montserrat', sans-serif;
 }
 .headingpd{
-margin: 0px;
-padding: 5px;
-background: #FFB404;
+  background: rgba(255,119,0,0.9);
+  margin: 0px;
+  padding: 3px;
 }
 #head{
-margin: 20px 100px 5px 100px;
+margin: 1px 40px;
 }
 .contentpd{
 /* margin: 40px 110px 40px 110px; */
@@ -24,7 +24,7 @@ display:flex;
 flex-flow:column wrap;
 justify-content: space-around;
 }
-.products{ 
+.products{
 display: flex;
 flex-flow: row wrap;
 align-items:center;
@@ -124,25 +124,33 @@ transform:scale(1.1);
 .sd1:hover{
 color:#0cf;
 transform:scale(1.1);
-} 
+}
 button{
 display:inline-block;
-border-radius: 12px;
-background: #FFB404;
+border-radius: 0px;
+background: rgba(255,119,0,0.9);
 color: black;
-font-family: 'Francois One', sans-serif;
+font-family: 'Montserrat', sans-serif;
 padding: 12px 24px;
 text-align: center;
 text-decoration: none;
 font-size: 14px;
+border: 0px;
+margin: 0px;
 margin-top:auto;
+}
+.buttons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .add{
 display: flex;
 margin:0px;
 flex-direction:row;
 justify-content:space-around;
-flex-wrap: nowrap; 
+flex-wrap: nowrap;
 margin: 15px 0px;
 position:relative;
 float:none;
@@ -156,6 +164,7 @@ display: flex;
 border:1px solid black;
 border-radius:2px;
 margin:0px;
+height: 42px;
 flex-direction: row;
 margin-right:auto;
 }
@@ -325,7 +334,7 @@ margin:0px;
 width:700px;
 border-left:1px solid #d9d9d9;
 }
-@media only screen and (max-width:440px) 
+@media only screen and (max-width:440px)
 {
     .sliderPG,.sliderRB
     {
@@ -355,7 +364,7 @@ border-left:1px solid #d9d9d9;
     }
     .restProd
     {
-        border:1px solid #d9d9d9;  
+        border:1px solid #d9d9d9;
     }
     .relProducts
     {

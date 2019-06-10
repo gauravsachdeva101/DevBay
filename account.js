@@ -1,7 +1,8 @@
-console.log('hi');
+let mainDisp = document.getElementsByClassName('maindivaccount')[0];
 let register = document.getElementById('register');
 let login = document.getElementById('login');
 let circle = document.getElementsByClassName('circle')[0];
+let iTag = circle.getElementsByTagName('i')[0];
 let loginP = document.getElementsByClassName('middlecontent')[0];
 let registerP = document.getElementsByClassName('lowercontent')[0];
 

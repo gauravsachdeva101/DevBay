@@ -1,5 +1,5 @@
 body{
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -8,14 +8,14 @@ body{
   font-weight: bold;
 } */
 .headingprivacy{
-  margin:0px;
-  padding: 10px;
-  background: #FFB404;
+  background: rgba(255,119,0,0.9);
+  margin: 0px;
+  padding: 3px;
 }
 #privacyhead
 {
-  margin: 20px 100px 20px 100px;
+  margin: 1px 40px;
 }
 .contentprivacy{
-  margin: 20px 110px 20px 110px;
+  margin: 40px 110px 40px 110px;
 }
