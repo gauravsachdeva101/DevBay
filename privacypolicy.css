@@ -3,11 +3,12 @@ body{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100%;
+  background:rgb(233, 237, 236);
   margin: 0px;
 }
 /* ol:first-child{
   font-weight: bold;
-} */
+} */ 
 .headingprivacy{
   background: rgba(255,119,0,0.9);
   margin: 0px;
@@ -19,4 +20,6 @@ body{
 }
 .contentprivacy{
   margin: 40px 110px 40px 110px;
+  background:white;
+  padding:10px;
 }

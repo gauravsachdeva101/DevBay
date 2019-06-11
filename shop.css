@@ -2,7 +2,7 @@ html,body{
   width: 100%;
   height: 100%;
   margin: 0px;
-  background:rgb(204, 204, 204);
+  background:rgb(233, 237, 236);
   font-family: 'Montserrat', sans-serif;
 }
 .headingshop{
@@ -178,6 +178,7 @@ margin-right:0px;
 }
 .shopnav{
   margin: 0px auto;
+  cursor:pointer;
   font-size:1em;
   padding: 0px;
   height:initial;
@@ -185,6 +186,15 @@ margin-right:0px;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+}
+.shopnav:hover #gridView,.shopnav:hover #listView
+{
+opacity:1;
+}
+#gridView,#listView
+{
+opacity:0;
+transition-timing-function: ease-in-out;
 }
 .shopnav i{
 margin:0px auto;
@@ -281,7 +291,7 @@ margin:0px;
   /* top:31%;
   left:30%; */
   width:inherit;
-  top:35px;left:0px;
+  top:25px;left:0px;
   margin: 0px;
   transition:all 250ms;
   color:black;
@@ -314,6 +324,7 @@ opacity:0.7;
 }
 .sorting li:hover {background-color:rgba(255, 119, 0, 0.9);}
 .shopnavdrop:hover .sorting {display: block;position:absolute;}
+.sorting:hover .sorting {display: block;position:absolute;}
 
 .shopnavdrop:hover {opacity:1.0;
 color:rgba(255, 119, 0, 0.9);
@@ -356,17 +367,36 @@ z-index:2;
     justify-content: center;
     align-items:center;
     }
+    .shopnav{display:none;}
     .sliderPG>div,.sliderRB>div
     {
     margin-bottom:30px;
     }
+    .upperinshop{
+    margin:0px;
+    width:100%;
+    margin-bottom:20px;
+    }
     .upperinshop>div
     {
-    margin:auto;
+    margin:0px;
+    height:50px;
+    }
+    .contentshop{
+      display:flex;
+      flex-flow:column wrap;
+      align-items:center;
+      background:white;
+      border-radius:2px;
+      width:350px;
+      margin:auto;
+      padding:0px;
+      /* border:2px solid rgb(191, 191, 191); */
     }
 }
 .item{
   display: flex;
+  border-bottom:1px solid grey;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;

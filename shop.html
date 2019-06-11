@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
+    
+    <title>Shop</title>
     <link rel="stylesheet" href="shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
@@ -20,13 +22,13 @@
 
                 <div class="shopnav">
                 <i class="fas fa-th-large"></i>
-                <p>Grid view</p>
+                <p id='gridView'>Grid</p>
                 </div>
 
 
                   <div class="shopnav">
                     <i class="fas fa-list"></i>
-                    <p>List view</p>
+                    <p id='listView'>List</p>
                   </div>
 
                   <div class='shopperMain'>
@@ -42,7 +44,7 @@
                       </div>
                 </div>
 
-                  <div style='display:flex;'class="shopnavdrop">
+                  <div style='cursor:pointer;display:flex;'class="shopnavdrop">
                         <div style='margin:0px;padding:0px;'><p style='margin:0px;padding:0px;margin-right:15px;' class="sortingdropdown">Default Sorting</p></div>
                         <div style='margin:0px'class="shopnavarrow">
                           <i style='margin:0px;' class="fas fa-chevron-down"></i>
@@ -57,6 +59,8 @@
                   </div>
 
               </div>
+
+
 
                <div class='sliderRB'>
 
@@ -247,8 +251,8 @@
                     <button type="button" name="button">ADD TO CART</button>
                 </div>
               </div>
-            <!---
-              <div class="productslistview">
+            
+              <div style='display:none;'class="productslistview">
                 <div class="item">
                   <div style='width:150px' class='itemimage pooja'>
                     <img style='height:278px;width:150px;'
@@ -324,7 +328,9 @@
                         </div>
                   </div>
                 </div>
-              </div>--->
+              </div>
+
+
                 <div class="shopnavlast">
 
 

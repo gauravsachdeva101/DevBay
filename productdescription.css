@@ -4,6 +4,7 @@ width:100%;
 height: 100%;
 padding:0px;
 margin: 0px;
+background:rgb(233, 237, 236);
 font-family: 'Montserrat', sans-serif;
 }
 .headingpd{
@@ -26,6 +27,7 @@ flex-flow:column wrap;
 justify-content: space-around;
 }
 .products{
+background:white;
 display: flex;
 flex-flow: row wrap;
 align-items:center;
@@ -128,7 +130,7 @@ transform:scale(1.1);
 }
 button{
 display:inline-block;
-border-radius: 0px;
+border-radius: 2px;
 background: rgba(255,119,0,0.9);
 color: black;
 font-family: 'Montserrat', sans-serif;
@@ -170,7 +172,7 @@ height: 42px;
 flex-direction: row;
 margin-right:auto;
 }
-.lmao{
+.lao{
 display:flex;
 flex-flow:column wrap;
 align-items:center;
@@ -178,11 +180,11 @@ justify-content: center;
 width:60%;
 transition:all 150ms;
 }
-.lmao:first-child:hover{
+.lao:first-child:hover{
 background:black;
 color:white;
 }
-.lmao:last-child:hover{
+.lao:last-child:hover{
 background:black;
 color:white;
 }
@@ -253,6 +255,7 @@ border-bottom:3px solid #0cf;
 } */
 .sliderRB{
 margin:0px;
+background:white;
 padding:10px;
 display:flex;
 flex-flow:row nowrap;
@@ -279,6 +282,10 @@ margin-right:10px;
 display:flex;
 flex-flow:row wrap;
 width:240px;
+}
+.relProducts
+{
+background:white;
 }
 .label{
 width:inherit;
@@ -336,8 +343,20 @@ margin:0px;
 width:700px;
 border-left:1px solid #d9d9d9;
 }
+.images
+{
+  border-radius:4px;height:480px;width:300px;
+}
+#textPara
+{
+  margin:0px;padding:0px;width:50px;height:50px;
+}
 @media only screen and (max-width:440px)
 {
+  .images{
+    height:250px;
+    width:150px;
+  }
     .sliderPG,.sliderRB
     {
     margin:0px;
@@ -368,8 +387,56 @@ border-left:1px solid #d9d9d9;
     {
         border:1px solid #d9d9d9;
     }
+    .restProd{
+      display:flex;
+      flex-flow:column wrap;
+      align-items:center;
+      justify-content: center;
+      margin:0px;
+      width:300px;
+      border-left:1px solid #d9d9d9;
+      }
     .relProducts
     {
     margin:0px auto;
     }
+    .middle{
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      align-content: center;
+      justify-content:space-around;
+      border-top: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 23px;
+      }
+      .BD,.AI{
+      padding:0px;
+      transition: all 0.5;
+      display:flex;
+      flex-flow:column wrap;
+      justify-content: flex-start;
+      width:100%;
+      }
+      .AI{display:none;}
+      .buttons button{width:50%;font-size:0.7rem;}
+      .add{
+        display: flex;
+        margin:0px;
+        flex-direction:row;
+        justify-content:space-around;
+        flex-wrap: nowrap;
+        margin: 15px 0px;
+        margin-left:100px;
+        width:30%;
+        position:relative;
+        float:none;
+        }
+        .add *{
+        margin:0px;
+        }
+        #textPara
+        {
+        width:25px;
+        }
 }

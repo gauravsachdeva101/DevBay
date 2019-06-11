@@ -79,7 +79,7 @@ width:60%;
 margin:auto auto;
 margin-top:8px;
 height:27px;
-background:white;
+background:#1f1f1f;;
 display:flex;
 flex-flow:column wrap;
 justify-content: space-around;
@@ -859,6 +859,7 @@ html,body{
 .upper-nav-resp
     {
     width:0px;
+    color: #00ccff;
     }
 @media only screen and (max-width:440px) 
 {
@@ -866,6 +867,7 @@ html,body{
 {
 display:none;
 }
+.searchBar{display:none;}
 .jumbodisp
 {
 display:none;

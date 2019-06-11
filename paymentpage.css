@@ -1,22 +1,46 @@
+html,body{
+  width:100%;
+  height: 100%;
+  padding:0px;
+  margin: 0px;
+  background:rgb(233, 237, 236);
+  
+  font-family: 'Montserrat', sans-serif;
+  }
 .contentofcheckout{
-  margin:40px 110px 110px 110px;
+  margin:0px;
+  padding:50px;
   display: flex;
   flex-flow: row nowrap;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: flex-start;
 }
 .headingofcheckout{
   margin: 0px;
   padding: 3px;
   background: rgba(255,119,0,0.9);
 }
+
 #heading{
   margin: 1px 40px;
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  background:rgb(233, 237, 236);
+
   margin: 0px;
   width: 100%;
+}
+.billingdetails
+{
+background:white;
+padding:10px;
+}
+.paymentdeatils
+{
+background:white;
+margin:0px 50px;
+padding:10px;
 }
 .billingdetails input{
 width: 70%;
@@ -49,14 +73,28 @@ margin: auto;
   flex-flow: row nowrap;
   justify-content: space-around;
   font-weight: bold;
+  border-bottom:1px solid grey;
+}
+.heads div{
+  /* border:1px solid grey; */
 }
 .total{
   display: flex;
   flex-flow: row nowrap;
   justify-content:space-around;
 }
+.right{
+width:75%;
+}
+.left{
+width:25%;
+font-weight: bold;
+}
 .right div{
-margin: 15px;
+margin:15px;
+margin-left:auto;
+text-align:left;
+margin-right: 0px;
 padding: 0px;
 }
 .left div{
@@ -85,4 +123,20 @@ button{
   font-size: 14px;
   border: 0px;
   margin-top:auto;
+}
+#tnc
+{
+display:none;
+width:90%;
+margin:10px;
+padding:5px;
+height:150px;
+overflow:scroll;
+line-height:30px;
+}
+#tac
+{
+cursor:pointer;
+color:purple;
+text-decoration: underline;
 }

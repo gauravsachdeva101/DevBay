@@ -1,7 +1,9 @@
 /* FINAL */
 html,body{
   margin: 0px;
-  width: 100%;
+  width: 100%; 
+  background:rgb(233, 237, 236);
+
   height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -15,6 +17,9 @@ margin: 1px 40px;
 }
 .contentcontactus{
   margin: 40px 110px 40px 110px;
+  background:white;
+  padding:10px;
+  border-radius:5px;
 }
 button{
   display:inline-block;

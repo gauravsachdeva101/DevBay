@@ -4,6 +4,8 @@ html,body{
   height: 100%;
   margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    background:rgb(233, 237, 236);
+
 }
 .headingoffer{
   background: rgba(255,119,0,0.9);
@@ -15,6 +17,8 @@ margin: 1px 40px;
 }
 .contentoffer{
   margin: 40px 110px 40px 110px;
+  background:white;
+  padding:10px;
 }
 img{
   width: 100%;

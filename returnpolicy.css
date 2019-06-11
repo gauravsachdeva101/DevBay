@@ -4,6 +4,8 @@ html,body{
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  background:rgb(233, 237, 236);
+
 }
 .returnheading{
   background: rgba(255,119,0,0.9);
@@ -15,4 +17,6 @@ html,body{
 }
 .returncontent{
   margin: 20px 110px 20px 110px;
+  background:white;
+  padding:10px;
 }
