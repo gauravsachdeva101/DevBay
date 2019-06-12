@@ -1,17 +1,22 @@
+/* final */
 html,body{
   margin: 0px;
   width: 100%;
   height: 100%;
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background:rgb(233, 237, 236);
+
 }
 .shippingheading{
-  margin:0px;
-  padding: 10px;
-  background: #FFB404;
+  background: rgba(255,119,0,0.9);
+  margin: 0px;
+  padding: 3px;
 }
 #headshipping{
-  margin: 20px 100px 20px 100px;
+  margin: 1px 40px;
 }
 .contentshipping{
-  margin:70px 110px 50px 110px;
+  background:white;
+  padding:10px;
+  margin: 20px 110px 20px 110px;
 }
