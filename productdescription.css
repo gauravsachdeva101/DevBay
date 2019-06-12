@@ -330,6 +330,7 @@ text-align: center;
 display:flex;
 flex-flow:column wrap;
 width:initial;
+cursor:pointer;
 align-items:center;
 justify-content:center;
 text-align: center;

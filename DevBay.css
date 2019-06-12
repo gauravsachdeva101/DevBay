@@ -802,13 +802,13 @@ html,body{
   .lowercontent{
     margin: auto;
     width: 40%;
-    border: 2px solid grey;
-    background:grey;
+    border: 2px solid rgb(223, 227, 226);
+    background:rgb(223, 227, 226);
     padding: 30px;
   }
   .middlecontent{
-    border: 2px solid grey;
-    background:gray;
+    border: 2px solid rgb(223, 227, 226);
+    background:rgb(223, 227, 226);
     width: 40%;
     height: 220px;
     padding: 30px;
@@ -890,6 +890,7 @@ display:none;
     {
     padding-top:60px;
     }
+    .lower-nav{display:none;}
     .upper-nav>li:not(:first-child)
     {
     display:none;

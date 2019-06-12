@@ -372,6 +372,7 @@ z-index:2;
     {
     margin-bottom:30px;
     }
+   
     .upperinshop{
     margin:0px;
     width:100%;
@@ -404,6 +405,7 @@ z-index:2;
 .itemimage{
   padding: 20px;
 }
+.itemimage.pooja{cursor:pointer;}
 .itemdetails{
   padding: 20px;
   align-items: center;
